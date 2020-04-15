@@ -1,4 +1,4 @@
-const apiURL = 'http://localhost:3001'
+const apiURL = 'http://localhost:3000'
 //const apiURL = 'https://railsapi-kurmasz.codeanyapp.com'
 
 export default class API {
@@ -6,7 +6,7 @@ export default class API {
     console.log("In fetch Users");
     return fetch(`${apiURL}/users`)
       .then(response => {
-        
+
         console.log('Response from /users ')
         console.log(response)
 
